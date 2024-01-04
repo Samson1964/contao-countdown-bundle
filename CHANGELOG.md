@@ -1,5 +1,9 @@
 # Countdown Changelog
 
+## Version 1.0.0 (2024-01-04)
+
+* Change: Countdown-Klasse und Templates erweitert
+
 ## Version 0.0.3 (2024-01-04)
 
 * Fix: DCA und Sprachdatei

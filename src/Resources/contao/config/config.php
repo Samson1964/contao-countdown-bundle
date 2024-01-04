@@ -16,4 +16,8 @@
  * CONTENT ELEMENTS
  * -------------------------------------------------------------------------
  */
-$GLOBALS['TL_CTE']['content']['countdown'] = 'Schachbulle\ContaoCountdownBundle\ContentElements\Countdown';
+$GLOBALS['TL_CTE']['includes']['countdown'] = 'Schachbulle\ContaoCountdownBundle\ContentElements\Countdown';
+
+$GLOBALS['TL_CSS'][] = 'bundles/contaocountdown/default.css';
+//$GLOBALS['TL_JAVASCRIPT'][] = 'bundles/contaocountdown/countdown.js';
+//$GLOBALS['TL_BODY'][] = '<script src="bundles/contaocountdown/countdown.js"></script>';  

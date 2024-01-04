@@ -11,5 +11,4 @@
  * @copyright Frank Hoppe 2013
  */
 
-$GLOBALS['TL_LANG']['CTE']['countdown']['0'] = "Schachtabelle";
-$GLOBALS['TL_LANG']['CTE']['countdown']['1'] = "CSV-Daten als Schachtabelle ausgeben";
+$GLOBALS['TL_LANG']['CTE']['countdown'] = array('Countdown', 'Einen Countdown anzeigen');

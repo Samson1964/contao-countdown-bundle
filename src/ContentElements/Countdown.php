@@ -30,21 +30,22 @@ class Countdown extends \ContentElement
 	{
 
 		// Parameter zuweisen
-		$csv = $this->countdown_csv;
-		$file = $this->countdown_file;
-		$namendrehen = $this->countdown_namendrehen;
-		$lightbox = $this->countdown_lightbox;
-		$linktext = $this->countdown_linktext;
-		$flagge = $this->countdown_flaggen;
+		//$csv = $this->countdown_csv;
+		//$file = $this->countdown_file;
+		//$namendrehen = $this->countdown_namendrehen;
+		//$lightbox = $this->countdown_lightbox;
+		//$linktext = $this->countdown_linktext;
+		//$flagge = $this->countdown_flaggen;
 
-		// Template ausgeben
-		$this->Template->id = $this->id;
-		$this->Template->linktext = $linktext;
-		$this->Template->class = "ce_countdown";
-		$this->Template->tabelle = $content;
-		$this->Template->datum = $aktdatum;
-		$this->Template->turnierende = $this->countdown_ende;
-		$this->Template->hinweis = $this->countdown_note;
+ 		//'December 31 2024 23:59:59 GMT+0200';
+ 		// Template ausgeben
+		$this->Template->countdown_finish = date('F j Y G:i:s', $this->countdown_finish);
+		//$this->Template->linktext = $linktext;
+		//$this->Template->class = "ce_countdown";
+		//$this->Template->tabelle = $content;
+		//$this->Template->datum = $aktdatum;
+		//$this->Template->turnierende = $this->countdown_ende;
+		//$this->Template->hinweis = $this->countdown_note;
 
 		return;
 
