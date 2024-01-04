@@ -58,22 +58,22 @@
 
 </script>
 
-<div id="clockdiv_<?= $this->id ?>" class="<?= $this->countdown_css ?>">
+<div id="clockdiv_<?= $this->id ?>" class="clockdiv">
 	<div>
 		<span class="days"></span>
-		<div class="smalltext"><?= $this->countdown_days ?></div>
+		<div class="smalltext"><?= $GLOBALS['TL_LANG']['tl_content']['countdown_days'] ?></div>
 	</div>
 	<div>
 		<span class="hours"></span>
-		<div class="smalltext"><?= $this->countdown_hours ?></div>
+		<div class="smalltext"><?= $GLOBALS['TL_LANG']['tl_content']['countdown_hours'] ?></div>
 	</div>
 	<div>
 		<span class="minutes"></span>
-		<div class="smalltext"><?= $this->countdown_minutes ?></div>
+		<div class="smalltext"><?= $GLOBALS['TL_LANG']['tl_content']['countdown_minutes'] ?></div>
 	</div>
 	<div>
 		<span class="seconds"></span>
-		<div class="smalltext"><?= $this->countdown_seconds ?></div>
+		<div class="smalltext"><?= $GLOBALS['TL_LANG']['tl_content']['countdown_seconds'] ?></div>
 	</div>
 </div>
 

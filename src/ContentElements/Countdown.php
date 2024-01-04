@@ -37,15 +37,13 @@ class Countdown extends \ContentElement
 		//$linktext = $this->countdown_linktext;
 		//$flagge = $this->countdown_flaggen;
 
- 		//'December 31 2024 23:59:59 GMT+0200';
  		// Template ausgeben
 		$this->Template->countdown_finish = date('F j Y G:i:s', $this->countdown_finish);
-		//$this->Template->linktext = $linktext;
-		//$this->Template->class = "ce_countdown";
-		//$this->Template->tabelle = $content;
-		//$this->Template->datum = $aktdatum;
-		//$this->Template->turnierende = $this->countdown_ende;
-		//$this->Template->hinweis = $this->countdown_note;
+		$this->Template->countdown_days = $GLOBALS['TL_LANG']['tl_content']['countdown_days'];
+		$this->Template->countdown_hours = $GLOBALS['TL_LANG']['tl_content']['countdown_hours'];
+		$this->Template->countdown_minutes = $GLOBALS['TL_LANG']['tl_content']['countdown_minutes'];
+		$this->Template->countdown_seconds = $GLOBALS['TL_LANG']['tl_content']['countdown_seconds'];
+		$this->Template->countdown_css = $this->countdown_style ? 'clockdiv_'.$this->countdown_style : 'clockdiv';
 
 		return;
 
