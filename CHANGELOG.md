@@ -1,5 +1,10 @@
 # Countdown Changelog
 
+## Version 1.0.2 (2024-01-05)
+
+* Add: Deutsches Fallback für Sprachvariablen Tage, Stunden, Minuten und Sekunden in Countdown-Klasse
+* Add: loadLanguageFile in Klasse Countdown
+
 ## Version 1.0.1 (2024-01-04)
 
 * Change: Sprachvariablen vom Template in die Countdown-Klasse

@@ -37,12 +37,13 @@ class Countdown extends \ContentElement
 		//$linktext = $this->countdown_linktext;
 		//$flagge = $this->countdown_flaggen;
 
+		\System::loadLanguageFile('tl_content');
  		// Template ausgeben
 		$this->Template->countdown_finish = date('F j Y G:i:s', $this->countdown_finish);
-		$this->Template->countdown_days = $GLOBALS['TL_LANG']['tl_content']['countdown_days'];
-		$this->Template->countdown_hours = $GLOBALS['TL_LANG']['tl_content']['countdown_hours'];
-		$this->Template->countdown_minutes = $GLOBALS['TL_LANG']['tl_content']['countdown_minutes'];
-		$this->Template->countdown_seconds = $GLOBALS['TL_LANG']['tl_content']['countdown_seconds'];
+		$this->Template->countdown_days = $GLOBALS['TL_LANG']['tl_content']['countdown_days'] ? $GLOBALS['TL_LANG']['tl_content']['countdown_days'] : 'Tage';
+		$this->Template->countdown_hours = $GLOBALS['TL_LANG']['tl_content']['countdown_hours'] ? $GLOBALS['TL_LANG']['tl_content']['countdown_hours'] : 'Stunden';
+		$this->Template->countdown_minutes = $GLOBALS['TL_LANG']['tl_content']['countdown_minutes'] ? $GLOBALS['TL_LANG']['tl_content']['countdown_minutes'] : 'Minuten';
+		$this->Template->countdown_seconds = $GLOBALS['TL_LANG']['tl_content']['countdown_seconds'] ? $GLOBALS['TL_LANG']['tl_content']['countdown_seconds'] : 'Sekunden';
 		$this->Template->countdown_css = $this->countdown_style ? 'clockdiv_'.$this->countdown_style : 'clockdiv';
 
 		return;
